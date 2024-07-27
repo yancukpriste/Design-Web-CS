@@ -6,23 +6,54 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Design Web Server</title>
-</head>
-<style>
-    body{
-        background: url(bg.jpg) rgba(0, 0, 0, 0.3);
-        background-blend-mode: multiply;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 
-    @media(max-width: 991px){
-        .sidebar{
-            background-color: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
+    <style>
+        html{
+            scroll-behavior: smooth;
         }
-    }
-</style>
+
+        body{
+            background: url(bg.jpg) rgba(0, 0, 0, 0.3);
+            background-blend-mode: multiply;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+            text-shadow: 2px 2px 3px black;
+            color: #fff;
+        }
+
+        @media(max-width: 991px){
+            .sidebar{
+                background-color: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(10px);
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+    </style>
+</head>
 
 <body class="vh-100 overflow-hidden">
     <!--Navbar-->
@@ -30,7 +61,7 @@
         <div class="container">
 
     <!--Logo-->
-            <img src="LIKMI.png" style="">
+            <img src="Logo.png" style="margin-right: 5px;">
             <a class="navbar-brand fs-4">Cloud System</a>
 
     <!--Button-->
@@ -65,11 +96,15 @@
         </div>
     </nav>
 
-    <!--Isi-->
-    <main>
-        <section class="w-100 vh-100 d-flex flex-columnn justify-content-center align-items-center text-white fs-1">
-            <h1 style="font-size: 1.5em; text-shadow: 4px 4px 5px black;">Welcome to Our Website</h1>
-        </section>
-    </main>
+    <div id="Isi">
+        <h1>Welcome to Our Website</h1>
+        <h2>Anggota Kelompok:</h2>
+        <ul>
+            <li>1. Jonathan Hansen - 2022110006</li>
+            <li>2. Andika Faiz Ibrahim - 2022110009</li>
+            <li>3. Joeseph Colin Cleary - 2022110023</li>
+            <li>4. Benedictus Marcellino - 2022110074</li>
+        </ul>
+    </div>
 </body>
 </html>
